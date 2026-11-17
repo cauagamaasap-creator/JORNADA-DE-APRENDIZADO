@@ -1,0 +1,21 @@
+<script>
+let vetor = [];
+let pares = 0;
+let impares = 0;
+
+for(let i = 0; i < 10; i++){
+    vetor[i] = parseInt(prompt("Digite um numero:"));
+}
+
+for(let i = 0; i < 10; i++){
+    if(vetor[i] % 2 == 0){
+        pares++;
+    }
+    else{
+        impares++;
+    }
+}
+
+alert("Quantidade de pares: " + pares);
+alert("Quantidade de impares: " + impares);
+</script>
