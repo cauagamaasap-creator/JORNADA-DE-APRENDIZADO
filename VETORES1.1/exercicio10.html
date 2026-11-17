@@ -1,0 +1,28 @@
+<script>
+let notas = [];
+let soma = 0;
+let media = 0;
+let aprovados = 0;
+let reprovados = 0;
+
+for(let i = 0; i < 10; i++){
+    notas[i] = parseFloat(prompt("Digite a nota do aluno:"));
+    soma = soma + notas[i];
+}
+
+media = soma / 10;
+
+for(let i = 0; i < 10; i++){
+    if(notas[i] >= 6){
+        aprovados++;
+    }
+    else{
+        reprovados++;
+    }
+}
+
+alert("Notas: " + notas);
+alert("Media da turma: " + media);
+alert("Alunos aprovados: " + aprovados);
+alert("Alunos reprovados: " + reprovados);
+</script>

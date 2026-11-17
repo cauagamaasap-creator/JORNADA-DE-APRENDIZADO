@@ -1,0 +1,15 @@
+<script>
+let vetor = [];
+
+for(let i = 0; i < 10; i++){
+    vetor[i] = parseInt(prompt("Digite um numero:"));
+}
+
+let resultado = "";
+
+for(let i = 9; i >= 0; i--){
+    resultado = resultado + vetor[i] + " ";
+}
+
+alert("Ordem inversa: " + resultado);
+</script>
